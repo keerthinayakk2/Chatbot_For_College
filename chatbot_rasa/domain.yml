@@ -1,0 +1,217 @@
+version: "3.0"
+
+entites:
+  - course
+
+
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - asked_for_dept_info
+  - thanks
+  - course_duration
+  - course_inqury
+  - about_course
+  - about_faculties
+  - faculty_details
+  - student_details
+  - placement_details
+  - internship_details
+  - placed_details
+  - fee_details
+  - syllabus_details
+  - about_bot
+  - who_info
+  - result_enquiry
+
+responses:
+  utter_about_bot:
+  - text : "I am doing Great!!What about you"
+  - text : "All Good,What about you"
+  - text : "Great!!Thanks"
+  - text : "Doing Good.How about you"
+  - text : "Doing Great,How are you"
+
+  utter_result_enquiry:
+  - text : <b>NOTE:YOU SHOULD LOGIN TO SIMS PORTAL</b><br><br>
+              <a href="https://sims.sit.ac.in/parents/index.php?option=com_history&task=seating">https://sims.sit.ac.in/parents/index.php?option=com_history&task=seating</a>
+
+  utter_who_info:
+  - text : "I am Bot!!"
+  - text : "I am Assistant"
+  - text : "I am Bot, I can Assist you"
+  - text : "I am SIT MCA Department Chat Assistant"
+  - text : "I am your Chat Assistant"
+  - text : "I am your Personal Assistant"
+
+  utter_greet:
+  - text: "Hey! How are you?"
+  - text: "Hi"
+  - text: "Hello"
+
+  utter_greet_ask_for_help:
+  - text : "How Can I help you?"
+
+  utter_about_department:
+  - text : "MCA Department started in 1994 at SIT Tumkuru."
+
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_closing_greet:
+  - text : "It's my pleasure"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_ask_more:
+  - text : "Anything you want to know more"
+
+  utter_course_criteria:
+  - text : "A candidate who have passed Qualifying Examination in any recognised under graduate examination 
+            or equivalent examination with Mathematics or Statistics or Computer Science or Computer Application 
+            or Computer Programming or Business Mathematics or Business Statistics as one of the optional subjects 
+            and obtained an aggregate minimum of 50% [for General Merit Candidate] of marks taken together in 
+            all the subjects in all the years of the Degree Examination is eligible for admission to MCA courses. 
+
+            <br><br>(For Karnataka Candidates belonging to SC/ST and Category–1, 45% of marks in qualifying exam are mandatory).
+              <br><br>Entrance Examination: KMT or PGCET – ANYONE IS MANDATORY .
+              <br><b>NOTE: ROUNDING OFF AGGREGATE PERCENT IS NOT PERMITTED</b>
+            "
+  utter_course_duration:
+  - text : "MCA course duration is 2 years." 
+
+  utter_about_course:
+  - text : "Siddaganga Educational Society started MCA program in the year 1994. It is affiliated to 
+            Visvesvaraya technological University and approved by All India Council for technical Education. 
+            The main focus of the program is the application of software technology to solve business problems. 
+            The programme offers a number of in-depth, application-oriented subjects. It covers the methodology 
+            to develop an error free software product efficiently, and to maintain software products, that utilize 
+            networking technology, that integrate multiple technologies and other important software applications.
+             The campus placement for MCA has been good. Almost 90% of the eligible MCA students get placed in campus 
+             recruitments."    
+
+  utter_about_faculties:
+  - text : "There are 10 professors in MCA department"         
+
+  utter_faculty_details:
+  - text :  <a href="https://sit.irins.org/profile/91101">Dr Premasudha. B G</a><br>
+            <a href="https://sit.irins.org/profile/91103">Dr Asha Gowda Karegowda</a><br>
+            <a href="https://sit.irins.org/profile/91105">Dr Vijaya Kumar H S</a><br>
+            <a href="https://sit.irins.org/profile/91107">Dr T. M. Kiran Kumar</a><br>
+            <a href="https://sit.irins.org/profile/91109">Dr Bhanuprakash C</a><br>
+            <a href="https://sit.irins.org/profile/91111">Mr Virupakshaiah H K</a><br>
+            <a href="https://sit.irins.org/profile/91113">Dr Bharathi P T</a><br>
+            <a href="https://sit.irins.org/profile/91115">Dr Prashanth G K</a><br>
+            <a href="https://sit.irins.org/profile/91117">Mr Ramesh C N</a><br>
+            <a href="https://sit.irins.org/profile/91119">Mr Venkata Reddy Y</a>
+
+  utter_student_details:
+  - text : "There are 60 students in MCA department"  
+           
+  utter_placement_details:
+  - text : "Companies that recruit MCA Students
+            1.Accenture<br>
+            2.Amazon<br>
+            3.Allstate<br>
+            4.Altimetric<br>
+            5.Autoliv<br>
+            6.Betsol<br>
+            7.Comviva<br>
+            8.Cordis Technology<br>
+            9.Cerner<br>
+            10.Coditas<br>
+            11.Capgemini<br>
+            12.Cognizant<br>
+            13.Deloitte<br>
+            14.DXC<br>
+            15.Eurofins<br>
+            16.Goldman Sachs<br>
+            17.Glassbeam<br>
+            18.Hashedin<br>
+            19.Hitachi Vantara<br>
+            20.Infogain<br>
+            21.Infosys<br>
+            22.IBM<br>
+            23.MResult<br>
+            24.One Trust<br>
+            25.Quest Global<br>
+            26.Rakuten <br>
+            27.Rapido.bike<br>
+            28.Speridian Technologies<br>
+            29.Sasken Technology<br>
+            30.TCS Ninja<br>
+            31.Wiley Mthree <br>
+            32.Ziroh Labs<br>
+            33.6d technologies<br>
+            34.TCS Digital<br>
+            <b>NOTE:In the above mentioned companies few companies provide Internship also<b>"  
+
+  utter_internship_details:
+  - text : "1.Accenture<br>
+            2.Amazon<br>
+            3.Allstate<br>
+            4.Altimetric<br>
+            5.Autoliv<br>
+            6.Betsol<br>
+            7.Comviva<br>
+            8.Cordis Technology<br>
+            9.Cerner<br>
+            10.Coditas<br>
+            11.Capgemini<br>
+            12.Cognizant<br>
+            13.Deloitte<br>
+            14.DXC<br>
+            15.Eurofins<br>
+            16.Goldman Sachs<br>
+            17.Glassbeam<br>
+            18.Hashedin<br>
+            19.Hitachi Vantara<br>
+            20.Infogain<br>
+            21.Infosys<br>
+            22. IBM<br>
+            23.MResult<br>
+            24.One Trust<br>
+            25.Quest Global<br>
+            26.Rakuten <br>
+            27.Rapido.bike<br>
+            28. Speridian Technologies<br>
+            29.Sasken Technology<br>
+            30.TCS Ninja<br>
+            31.Wiley Mthree <br>
+            32.Ziroh Labs<br>
+            33.6d technologies<br>
+            34.TCS Digital<br>
+            NOTE:In the above mentioned companies few companies provide Internship also"  
+
+  utter_placed_details:
+  - text :  <a href="http://www.sit.ac.in/html/component/mcadept/mcadocs/mca-placement-2021-22.pdf">MCA Placement 2021-22</a><br>
+            <a href="http://www.sit.ac.in/html/component/mcadept/mcadocs/mca-placement-2020-21.pdf">MCA Placement 2020-21</a>
+
+  utter_fee_details:
+  - text : "  Fees for Govt seat for MCA is INR 83,565 for the first year (It may vary) <br>
+              Fees for Management seat for MCA is INR 1,30,000 + Donation(INR 2,00,000)for the first year (It may vary) "
+
+  utter_syllabus_details:
+  - text :  <a href="http://sit.ac.in/html/component/mcadept/mcaschemasyllabus/1%20Scheme%20and%20Syllabus%20of%202020-2022%20batch.pdf">Scheme and Syllabus of 2020-2022</a><br>
+            <a href="http://sit.ac.in/html/component/mcadept/mcaschemasyllabus/2%20Scheme%20Of%20Syllabus%20for%202021-2023%20batch.pdf">Scheme and Syllabus for 2021-2023</a>
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

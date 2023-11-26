@@ -1,0 +1,112 @@
+version: "3.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story : department path
+  steps:
+    - intent : greet
+    - action : utter_greet
+    - action : utter_greet_ask_for_help
+    - intent : asked_for_dept_info
+    - action : utter_about_department
+    - action : utter_ask_more
+    - intent : thanks
+    - action : utter_closing_greet
+
+- story : course inquiry
+  steps:
+    - intent : course_inqury
+    - action : utter_course_criteria
+
+- story : course duation ask
+  steps:
+    - intent : course_duration
+    - action : utter_course_duration
+  
+- story : course about
+  steps:
+    - intent : about_course
+    - action : utter_about_course
+
+- story : about faculties
+  steps:
+    - intent : about_faculties
+    - action : utter_about_faculties
+
+- story : faculty details
+  steps:
+    - intent : faculty_details
+    - action : utter_faculty_details
+
+- story : student details
+  steps:
+    - intent : student_details
+    - action : utter_student_details
+
+- story : placement details
+  steps:
+    - intent : placement_details
+    - action : utter_placement_details
+
+- story : internship details
+  steps:
+    - intent : internship_details
+    - action : utter_internship_details
+
+- story :  placed details
+  steps:
+    - intent : placed_details
+    - action : utter_placed_details
+
+- story :  fee details
+  steps:
+    - intent : fee_details
+    - action : utter_fee_details
+
+- story :  syllabus details
+  steps:
+    - intent : syllabus_details
+    - action : utter_syllabus_details
+
+- story :  who_enquiry
+  steps:
+    - intent : who_info
+    - action : utter_who_info
+
+- story :  about_enquiry
+  steps:
+    - intent : about_bot
+    - action : utter_about_bot
+
+- story :  result_enquiry
+  steps:
+    - intent : result_enquiry
+    - action : utter_result_enquiry
+

@@ -1,0 +1,273 @@
+version: "3.0"
+
+nlu:
+- intent: course_inqury
+  examples: |
+    - What are the criterias for taking addmissions in [MCA](course)
+    - What are the criterias for taking addmissions in [Master in Computer Applications](course)
+    - Are there any criterias for taking addmission in [Master in Computer Applications](course)
+    - What are the criterias for addmissions in [Master in Computer Applications](course)
+    - Is there any criterias for addmissions in [Master in Computer iApplications](course)
+    - Is there any criterias for addmissions in [MCA](course)
+    - What are the criterias for addmissions in [MCA](course)
+    - Are there any criterias for taking addmission in [MCA](course)
+    - Criteria
+
+- intent: course_duration
+  examples: |
+    - [MCA](course) is of how many years?
+    - how many year it will take to complete [MCA](course)?
+    - how many year it will take to complete [Master of Computer Appliactions](course)?
+    - [MCA](course) is of how many years?
+    - how many year it will take to complete [MCA](course)?
+    - how many year it will take to complete [Master of Computer Appliactions](course)?
+    - what are the duration of course [MCA](course)?
+    - what is the duration of course [MCA](course)?
+    - what's duration of course [MCA](course)?
+    - Duration
+
+- intent: asked_for_dept_info
+  examples: |
+    - I wanted to know for MCA department
+    - Please help me with MCA dept 
+    - Send me Master of Computer Application department info
+    - I wanted to know for Master of Computer Application department in SIT
+    - I wanted to know for MCA department in SIT
+    - Department
+
+- intent: about_course
+  examples: |
+    - Tell me about MCA department
+    - Tell me about Master of Computer Application department
+    - MCA department details
+    - Master of Computer Application department details
+    - Tell me about MCA department
+    - Tell me about Master of Computer Application department
+    - MCA department details
+    - Master of Computer Application department details
+    - Course
+
+- intent: about_faculties
+  examples: |
+    -How many faculties are there in MCA department
+    -How many faculties are there in Master of Computer Applications department
+    -Number of faculties in MCA department
+    -Mention how many faculties are there in MCA department
+    -Mention how many faculties are there in your department
+    -Number of faculties in Master of Computer Applications
+    -How many faculties are there in MCA department
+    -How many faculties are there in Master of Computer Applications department
+    -Number of faculties in MCA department
+    -Mention how many faculties are there in MCA department
+    -Mention how many faculties are there in your department
+    -Number of faculties in Master of Computer Applications
+    -Faculties count
+
+- intent: faculty_details
+  examples: |
+    -What is the educational backgroud of MCA faculties
+    -Faculty details of MCA department
+    -What are the educational backgroud of MCA faculties
+    -Who are the faculties of MCA
+    -May I know the faculties of MCA
+    -Who are the proctors of MCA department
+    -May I know the faculties of Master of Computer Application
+    -What is the educational backgroud of MCA faculties
+    -Faculty details of MCA department
+    -What are the educational backgroud of MCA faculties
+    -Who are the faculties of MCA
+    -May I know the faculties of MCA
+    -Who are the proctors of MCA department
+    -May I know the faculties of Master of Computer Application
+    -Profile
+
+- intent: student_details
+  examples: |
+    -How many number of students are there in MCA department
+    -Total number of students in MCA department
+    -Total count of students in MCA department
+    -Number of students who graduate from MCA department
+    -How many students are graduated
+    -Total strength of first year MCA
+    -How many seats are there in MCA
+    -How many seats are available for MCA in SIT
+    -Total Number of intake for MCA 
+    -Students
+
+- intent: internship_details
+  examples: |
+    -List the companies that visit for Internship
+    -Is there any internship opportunity
+    -Is there any internship offered for your students
+    -Does your college provide internship
+    -List out how many comapanies will visit for internship
+    -Internship
+
+- intent: placed_details
+  examples: |
+    -List of placed students till date
+    -Total number of students got placed
+    -List of students who got placed
+    -Number of students get placed in previous year
+    -What is the percentage of placed students
+    -What is the percentage of placed students in previous year
+    -How many students get placed every year in MCA
+    -Companies that visit for placement
+    -Placed students
+
+- intent: placement_details
+  examples: |
+    -How many companies will come for MCA
+    -What are all the companies that visit for campus recruitment
+    -Number of companies that visit for placement
+    -List of companies that visit for campus
+    -What companies visit for campus selection
+    -Campus Recruiters List
+    -placement information
+
+- intent: fee_details
+  examples: |
+    -What is the fee stucture for MCA course
+    -Is there any donation for Management seat
+    -What is the fee stucture for Government seat
+    -What is the fee stucture for Management seat
+    -What is the fee stucture for MCA course in SIT
+
+- intent: syllabus_details
+  examples: |
+    -What is the syllabus for MCA course
+    -What is the syllabus of first year MCA
+    -Can I know the syllabus of MCA
+    -What is the syllabus of second year MCA
+    -What is the syllabus of first sem MCA
+    -What is the syllabus of second sem MCA
+    -What is the syllabus of third sem MCA
+    -What is the syllabus of fourth sem MCA
+    -Syllabus copy of MCA
+
+
+
+- intent : thanks
+  examples: |
+    - Thanks
+    - Thank you
+    - Thanks a lot 
+    - Great !! Thanks
+
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+  
+- intent: about_bot
+  examples: |
+    - How are you
+    - hw r u
+
+- intent: who_info
+  examples: |
+    - Who are you
+    - Who is this
+    - Whom I am speaking to
+    - Can I know who I am conversing with
+
+- intent: result_enquiry
+  examples: |
+    - Result Information
+    - Can I see the result
+    - Can I get the result
+    - Exam result
+    - Result
+    - Can I know the results of final year students
+    - CIE
+    - Attendance
+
+- synonym: mca 
+  examples: |
+    - mca 
+    - master of computer application
+    
